@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream Travel Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --secondary: #1e40af;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --border: #e5e7eb;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 30px 20px;
+            background-color: var(--primary);
+            margin: 0 0 40px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .destination {
+            background-color: var(--card);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .destination {
+                flex-direction: row;
+            }
+        }
+
+        .destination-content {
+            padding: 25px;
+            flex: 1;
+        }
+
+        .destination-image {
+            flex-shrink: 0;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .destination-image {
+                width: 300px;
+            }
+        }
+
+        .destination-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .destination-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .destination-rank {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--primary);
+            margin-right: 15px;
+        }
+
+        .destination-name {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        .destination-country {
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        .destination-reason {
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .destination-description {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Top 10 Dream Travel Destinations</h1>
+    
+    <div class="container">
+        <!-- Destination 1 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">1</span>
+                    <h2 class="destination-name">Amsterdam</h2>
+                    <span class="destination-country">Netherlands</span>
+                </div>
+                <div class="destination-reason">Canals, tulips, and windmills</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Famous for its tulips, windmills, and extensive canal system, the Netherlands offers a blend of modern cities and countryside charm. Cycling is one of the best ways to explore the country.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/netherlands.jpg" alt="Netherlands">
+            </div>
+        </div>
+
+        <!-- Destination 2 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">2</span>
+                    <h2 class="destination-name">Paris</h2>
+                    <span class="destination-country">France</span>
+                </div>
+                <div class="destination-reason">Eiffel Tower, wine, and romance</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> From Paris' iconic Eiffel Tower to the vineyards of Bordeaux, France is the epitome of romance, art, and culture. Whether you're exploring the lavender fields in Provence or relaxing on the Riviera, it's an unforgettable destination.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/france.jpg" alt="France">
+            </div>
+        </div>
+
+        <!-- Destination 3 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">3</span>
+                    <h2 class="destination-name">Yoshino's Cherry Blossoms</h2>
+                    <span class="destination-country">Japan</span>
+                </div>
+                <div class="destination-reason">Cherry blossoms, culture, and ancient temples</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Japan offers an incredible blend of ancient traditions and futuristic cities. The cherry blossoms in spring are a stunning sight, and the mix of temples and technology is unique.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/japan.jpg" alt="Japan">
+            </div>
+        </div>
+
+        <!-- Destination 4 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">4</span>
+                    <h2 class="destination-name">Statue of Christ the Redeemer</h2>
+                    <span class="destination-country">Italy</span>
+                </div>
+                <div class="destination-reason">Art, architecture, and food</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Known for its art, architecture, food, and wine, Italy is a destination where history comes alive. From the Colosseum in Rome to the canals of Venice, Italy offers something for every traveler.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/italy.jpg" alt="Italy">
+            </div>
+        </div>
+
+        <!-- Destination 5 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">5</span>
+                    <h2 class="destination-name">Coast Mountains</h2>
+                    <span class="destination-country">Canada</span>
+                </div>
+                <div class="destination-reason">Mountains, lakes, and multicultural cities</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Known for its vast natural beauty, from the Rocky Mountains to its stunning lakes, Canada is an adventurer's paradise. Wildlife sightings and activities like kayaking, hiking, and skiing abound.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/canada.jpg" alt="Canada">
+            </div>
+        </div>
+
+        <!-- Destination 6 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">6</span>
+                    <h2 class="destination-name">Auckland</h2>
+                    <span class="destination-country">New Zealand</span>
+                </div>
+                <div class="destination-reason">Scenic nature and adventure</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Famous for its diverse landscapes, New Zealand is a haven for adventure lovers. From the glaciers of the South Island to the beaches of the North Island, the country offers countless outdoor activities.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/new-zealand.jpg" alt="New Zealand">
+            </div>
+        </div>
+
+        <!-- Destination 7 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">7</span>
+                    <h2 class="destination-name">Jungfrau</h2>
+                    <span class="destination-country">Switzerland</span>
+                </div>
+                <div class="destination-reason">Alps, chocolate, and picturesque lakes</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> A country of stunning alpine landscapes, Switzerland is famous for skiing, hiking, and luxury watches. The Swiss Alps are a must-visit for nature lovers and outdoor enthusiasts.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/switzerland.png" alt="Switzerland">
+            </div>
+        </div>
+
+        <!-- Destination 8 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">8</span>
+                    <h2 class="destination-name">Sydney Opera House</h2>
+                    <span class="destination-country">Australia</span>
+                </div>
+                <div class="destination-reason">Beaches, wildlife, and the Great Barrier Reef</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Australia is known for its diverse wildlife and landscapes, from the Great Barrier Reef to the Outback. It's also home to vibrant cities like Sydney and Melbourne.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/australia.jpg" alt="Australia">
+            </div>
+        </div>
+
+        <!-- Destination 9 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">9</span>
+                    <h2 class="destination-name">Barcelona</h2>
+                    <span class="destination-country">Spain</span>
+                </div>
+                <div class="destination-reason">Cultural heritage, beaches, and food</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Spain is a country of rich history, culture, and cuisine. From tapas and flamenco in Seville to the modernist architecture of Barcelona, Spain offers an amazing variety of experiences.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/spain.jpg" alt="Spain">
+            </div>
+        </div>
+
+        <!-- Destination 10 -->
+        <div class="destination">
+            <div class="destination-content">
+                <div class="destination-header">
+                    <span class="destination-rank">10</span>
+                    <h2 class="destination-name">Tromso's Aurora Borealis</h2>
+                    <span class="destination-country">Norway</span>
+                </div>
+                <div class="destination-reason">Fjords and the northern lights</div>
+                <div class="destination-description">
+                    <strong>Something to know:</strong> Known for its stunning fjords, Norway is a paradise for nature lovers. It's also one of the best places to see the Northern Lights.
+                </div>
+            </div>
+            <div class="destination-image">
+                <img src="images/norway.jpg" alt="Norway">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
